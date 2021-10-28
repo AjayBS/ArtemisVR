@@ -20,6 +20,7 @@ public class HandsController : MonoBehaviour
     {
         gripInputAction.action.performed += GripPressed;
         triggerInputAction.action.performed += TriggerPressed;
+        Debug.Log("Enabled");
     }
 
     private void TriggerPressed(InputAction.CallbackContext obj)
@@ -36,5 +37,6 @@ public class HandsController : MonoBehaviour
     {
         gripInputAction.action.performed -= GripPressed;
         triggerInputAction.action.performed -= TriggerPressed;
+        Debug.Log("Disabled");
     }
 }
