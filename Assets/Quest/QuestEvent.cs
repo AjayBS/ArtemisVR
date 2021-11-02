@@ -14,6 +14,7 @@ public class QuestEvent
     public string description;
     public byte[] id;
     public EventStatus status;
+    public int order = -1;
 
     public List<QuestPath> pathList = new List<QuestPath>();
 

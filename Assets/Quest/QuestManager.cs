@@ -23,6 +23,7 @@ public class QuestManager : MonoBehaviour
         quest.AddPath(b.GetId(), d.GetId());
         quest.AddPath(c.GetId(), e.GetId());
 
+        quest.BFS(a.GetId());
         quest.PrintPath();
     }
 
